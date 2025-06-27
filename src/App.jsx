@@ -10,26 +10,15 @@ function App() {
 
   return (
     <>
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
       <br />
-      <div>
-        <Hero1 />
-      </div>
-      <div>
-        <Analitycs />
-      </div>
-      <div>
-        <NewsLetter />
-      </div>
-      <div>
-        <Price />
-      </div>
-      <div>
-        <Footer />
-      </div>
-      
+      <Hero1 />
+      <Analitycs />
+      <NewsLetter />
+      <Price />
+      <Footer />
+
+
     </>
   )
 }
