@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #burgerBtn.open .upLine{
+        transform: translateY(5px);
+        transition: 0.3s;
+      }
+      #burgerBtn.open .bottomLine{
+        transform: translateY(-5px);
+        transition: 0.3s;
+      }
+
+      #burgerBtn.open.finish .upLine{
+        transform: rotate(-45deg) translateX(-5px) translateY(3px);
+        transition: 0.3s;
+      }
+      #burgerBtn.open.finish .bottomLine{
+        transform: rotate(45deg) translateX(-5px) translateY(-3px);
+        transition: 0.3s;
+      }
+
+      #burgerBtn.close .upLine{
+        transform: rotate(0deg) translateY(5px) translateX(0);
+        transition: 0.3s;
+      }
+      #burgerBtn.close .bottomLine{
+        transform: rotate(0deg) translateY(-5px) translateX(0);
+        transition: 0.3s;
+      }
+
+      #burgerBtn.close.selesai .upLine {
+        transform: translateY(0);
+        transition: 0.3s;
+      }
+
+      #burgerBtn.close.selesai .bottomLine {
+        transform: translateY(0);
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
